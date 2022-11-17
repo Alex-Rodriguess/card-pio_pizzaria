@@ -1,0 +1,19 @@
+body{
+    margin: auto;
+    width: 70%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    text-align: center;
+}
+
+section form ul li{
+    list-style: none;
+}
+
+header ul li{
+    list-style: none;
+}

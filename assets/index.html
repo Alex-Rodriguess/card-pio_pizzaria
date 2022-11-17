@@ -16,13 +16,69 @@
         </li>
     </ul>
     <section>
-        <h3>Selecione a pizza vendida</h3>
+        <h3>Selecione a pizza</h3>
         <form>
             <ul>
-                <li><input type="radio" id="mussarela" name:"pizza"></li>
+                <li><input type="radio" id="mussarela" name="pizza">
+                    <label for="mussarela
+                    ">Musarela</label>
+                </li>
+                <li><input type="radio" id="portuguesa" name="pizza">
+                    <label for="portuguesa">Portuguesa</label>
+                </li>
+                <li><input type="radio" id="quatroqueijos" name="pizza">
+                    <label for="quatroqueijos">Quatro-queijos</label>
+                </li>
+                <li><input type="radio" id="mista" name="pizza">
+                    <label for="mista">Mista</label>
+                </li>
+                <li><input type="radio" id="provolone" name="pizza">
+                    <label for="provolone">Provolone</label>
+                </li>
+                <li></li>
+
             </ul>
         </form>
+        <section id="table"></section>
+        <table>
+            <tr>
+                <th>Sabor</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultadoMista"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Provolone</td>
+                <td id="resultadoProvolone"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Quatro-queijos</td>
+                <td id="resultadoQuatroqueijos"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Portuguesa</td>
+                <td id="resultadoPortuguesa"></td>
+                <td></td>
+            </tr>
+        </table>
     </section>
+
+    <div><input type="text" id="cliente" nome="cliente" placeholder="Nome do cliente"><br><br>
+        <input type="text" id="endereço" nome="endereço" placeholder="Endereço">
+    </div>
+
+
 </header>
 
 <body>
