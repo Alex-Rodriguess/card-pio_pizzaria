@@ -8,20 +8,23 @@
     <title>Cardápio Pizzaria</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<header>
-    <ul>
-        <li>
-            <h2>Pizzaria da Mama</h2>
-            <h2>Cardápio</h2>
-        </li>
-    </ul>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <h2>Pizzaria da Mama</h2>
+                <h2>Cardápio</h2>
+            </li>
+        </ul>
+    </header>
     <section>
-        <h3>Selecione a pizza</h3>
+
         <form>
+            <h2>Selecione a pizza</h2>
             <ul>
                 <li><input type="radio" id="mussarela" name="pizza">
-                    <label for="mussarela
-                    ">Musarela</label>
+                    <label for="mussarela">Musarela</label>
                 </li>
                 <li><input type="radio" id="portuguesa" name="pizza">
                     <label for="portuguesa">Portuguesa</label>
@@ -35,11 +38,16 @@
                 <li><input type="radio" id="provolone" name="pizza">
                     <label for="provolone">Provolone</label>
                 </li>
-                <li></li>
-
             </ul>
         </form>
-        <section id="table"></section>
+    </section>
+    <section class="btn">
+        <button>Adicionar</button>
+        <button>Estorno</button>
+    </section>
+
+    <section id="table">
+
         <table>
             <tr>
                 <th>Sabor</th>
@@ -48,7 +56,7 @@
             </tr>
             <tr>
                 <td>Mussarela</td>
-                <td></td>
+                <td id="resultadoMussarela"></td>
                 <td></td>
             </tr>
             <tr>
@@ -73,16 +81,9 @@
             </tr>
         </table>
     </section>
-
-    <div><input type="text" id="cliente" nome="cliente" placeholder="Nome do cliente"><br><br>
-        <input type="text" id="endereço" nome="endereço" placeholder="Endereço">
-    </div>
-
-
-</header>
-
-<body>
-
+    <section>
+        <button id="export">Planilha</button>
+    </section>
 
     <script src="./tableToExcel.js"></script>
     <script src="./app.js"></script>

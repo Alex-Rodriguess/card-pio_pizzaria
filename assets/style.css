@@ -1,19 +1,45 @@
 body{
     margin: auto;
-    width: 70%;
+    width: 60%;
 }
 
 header{
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(41, 93, 136);
+    color: aliceblue;
     text-align: center;
+}
+
+header ul li{
+    list-style: none;
 }
 
 section form ul li{
     list-style: none;
 }
 
-header ul li{
-    list-style: none;
+section form ul li label{
+    font-size: 22px;
+}
+
+section{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section button{
+    margin: 5px;
+    font-size: 20px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: medium;
+    height: 30px;
+    width: 580px;
 }
