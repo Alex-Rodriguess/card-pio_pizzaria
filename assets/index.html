@@ -14,17 +14,17 @@
         <ul>
             <li>
                 <h2>Pizzaria da Mama</h2>
-                <h2>Cardápio</h2>
+                <h2>Vendas de Pizzas</h2>
             </li>
         </ul>
     </header>
     <section>
 
         <form>
-            <h2>Selecione a pizza</h2>
+            <h2>Selecione a pizza vendida</h2>
             <ul>
                 <li><input type="radio" id="mussarela" name="pizza">
-                    <label for="mussarela">Musarela</label>
+                    <label for="mussarela">Mussarela</label>
                 </li>
                 <li><input type="radio" id="portuguesa" name="pizza">
                     <label for="portuguesa">Portuguesa</label>
@@ -42,8 +42,8 @@
         </form>
     </section>
     <section class="btn">
-        <button>Adicionar</button>
-        <button>Estorno</button>
+        <button id="vendas">Vendas</button>
+        <button id="estorno">Estorno</button>
     </section>
 
     <section id="table">
@@ -57,28 +57,30 @@
             <tr>
                 <td>Mussarela</td>
                 <td id="resultadoMussarela"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mista</td>
-                <td id="resultadoMista"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Provolone</td>
-                <td id="resultadoProvolone"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Quatro-queijos</td>
-                <td id="resultadoQuatroqueijos"></td>
-                <td></td>
+                <td id="vendaMussarela"></td>
             </tr>
             <tr>
                 <td>Portuguesa</td>
                 <td id="resultadoPortuguesa"></td>
-                <td></td>
+                <td id="vendaPortuguesa"></td>
             </tr>
+            <tr>
+                <td>Quatro-queijos</td>
+                <td id="resultadoQuatroqueijos"></td>
+                <td id="vendaQuatroqueijos"></td>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultadoMista"></td>
+                <td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>Provolone</td>
+                <td id="resultadoProvolone"></td>
+                <td id="vendaProvolone"></td>
+            </tr>
+
+
         </table>
     </section>
     <section>
