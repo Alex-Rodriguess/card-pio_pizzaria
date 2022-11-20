@@ -42,4 +42,10 @@ table, th, td{
     font-size: medium;
     height: 30px;
     width: 580px;
+    font-size: 22px;
+}
+
+p{
+    font-size: 22px;
+    padding-right: 6em;
 }
