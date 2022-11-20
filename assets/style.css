@@ -47,5 +47,12 @@ table, th, td{
 
 p{
     font-size: 22px;
-    padding-right: 6em;
+    padding-right: 1em;
+}
+
+#totalgeral{
+    position: relative;
+    font-size: 24px;
+    
+   
 }

@@ -12,6 +12,7 @@ let vendaQuatroqueijos = 0.00;
 let vendaMista = 0.00;
 let vendaProvolone = 0.00;
 
+
 let btnVendas = document.getElementById('vendas');
 let btnEstorno = document.getElementById('estorno');
 let btnPlanilha = document.getElementById('export');
@@ -103,6 +104,14 @@ function estorno(e) {
     }
 }
 
-function planilha(e) {
-    TableToExcel.convert(document.getElementById('table'));
-}
+
+function soma(column = 3) {
+    let somaTotal = document.getElementsByClassName('itemValor');
+    let total = 0;
+
+    for (let i = 0; i < somaTotal.length; i++) {
+        let valor = parseFloat(somaTotal[i].textContent)
+
+        total = total + valor
+    }
+    console.log(total)
