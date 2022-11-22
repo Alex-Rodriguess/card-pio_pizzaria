@@ -105,13 +105,11 @@ function estorno(e) {
 }
 
 
-function soma(column = 3) {
-    let somaTotal = document.getElementsByClassName('itemValor');
-    let total = 0;
+/*$(function () {
+    var total = 0;
+    $('.itemValor').each(function () {
+        total += parseInt(JQuery(this).text());
+    });
 
-    for (let i = 0; i < somaTotal.length; i++) {
-        let valor = parseFloat(somaTotal[i].textContent)
-
-        total = total + valor
-    }
-    console.log(total)
+    $('#totalSoma').html(total);
+});

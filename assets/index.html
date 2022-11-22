@@ -44,6 +44,7 @@
     <section class="btn">
         <button id="vendas">Vendas</button>
         <button id="estorno">Estorno</button>
+        <button id="total">Total</button>
     </section>
 
     <section id="table">
@@ -80,23 +81,19 @@
                 <td id="resultadoProvolone"></td>
                 <td class="itemValor" id="vendaProvolone"></td>
             </tr>
-            <tr>
-                <td>Total</td>
-                <td id="qtd"></td>
-                <td id="total"></td>
-            </tr>
-
-
         </table>
+
     </section>
     <section>
-
+        <input id="totalSoma" placeholder="R$ 0.00">
         <button id="export">Gerar Planilha XML</button>
+
 
     </section>
 
     <script src="./tableToExcel.js"></script>
     <script src="./app.js"></script>
+    <script src="./jquery-3.6.1.min.js"></script>
 </body>
 
 </html>
