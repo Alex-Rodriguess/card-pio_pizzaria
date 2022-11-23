@@ -104,12 +104,42 @@ function estorno(e) {
     }
 }
 
+function exportReportToExcel() {
 
-/*$(function () {
-    var total = 0;
-    $('.itemValor').each(function () {
-        total += parseInt(JQuery(this).text());
+    TableToExcel.convert(document.getElementById("table"), {
+        name: "planilha.xlsx",
+        sheet: {
+            name: "planilha"
+        }
     });
+}
 
-    $('#totalSoma').html(total);
-});
+
+/*function concat() {
+    let soma = 0;
+
+    soma = soma + vendaMista + vendaMussarela + vendaPortuguesa + vendaProvolone + vendaQuatroqueijos;
+
+}
+console.log(soma);*/
+
+
+
+
+/*let valores = document.querySelectorAll(".item-valor");
+
+let total = 0;
+
+for (let i = 0; i < valores.length; i++) {
+
+    let valor = parseFloat(valores[i].textContent)
+
+    total = total + valor
+
+    document.getElementById('somaTotal').innerHTML = eval(total);
+
+}
+
+function somar() {
+    document.getElementById('somaTotal').innerHTML = total;
+}*/

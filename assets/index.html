@@ -44,56 +44,56 @@
     <section class="btn">
         <button id="vendas">Vendas</button>
         <button id="estorno">Estorno</button>
-        <button id="total">Total</button>
     </section>
 
     <section id="table">
 
         <table>
-            <tr>
+            <tr class="linha-valor">
                 <th>Sabor</th>
                 <th>Quantidade</th>
-                <th>Valor</th>
+                <th class="info-valor">Valor</th>
 
             </tr>
-            <tr>
+            <tr class="linha-valor">
                 <td>Mussarela</td>
                 <td id="resultadoMussarela"></td>
-                <td class="itemValor" id="vendaMussarela"></td>
+                <th class="itemValor" id="vendaMussarela"></th>
             </tr>
-            <tr>
+            <tr class="linha-valor">
                 <td>Portuguesa</td>
                 <td id="resultadoPortuguesa"></td>
-                <td class="itemValor" id="vendaPortuguesa"></td>
+                <th class="itemValor" id="vendaPortuguesa"></th>
             </tr>
-            <tr>
+            <tr class="linha-valor">
                 <td>Quatro-queijos</td>
                 <td id="resultadoQuatroqueijos"></td>
-                <td class="itemValor" id="vendaQuatroqueijos"></td>
+                <th class="itemValor" id="vendaQuatroqueijos"></th>
             </tr>
-            <tr>
+            <tr class="linha-valor">
                 <td>Mista</td>
                 <td id="resultadoMista"></td>
-                <td class="itemValor" id="vendaMista"></td>
+                <th class="itemValor" id="vendaMista"></th>
             </tr>
-            <tr>
+            <tr class="linha-valor">
                 <td>Provolone</td>
                 <td id="resultadoProvolone"></td>
-                <td class="itemValor" id="vendaProvolone"></td>
+                <th class="itemValor" id="vendaProvolone"></th>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td id="somaTotal"></td>
             </tr>
         </table>
+    </section><br>
 
-    </section>
     <section>
-        <input id="totalSoma" placeholder="R$ 0.00">
-        <button id="export">Gerar Planilha XML</button>
-
-
+        <button id="export" onclick="exportReportToExcel(this)">Planilha</button>
     </section>
-
     <script src="./tableToExcel.js"></script>
     <script src="./app.js"></script>
-    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>
