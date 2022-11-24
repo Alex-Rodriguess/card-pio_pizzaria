@@ -42,7 +42,7 @@
         </form>
     </section>
     <section class="btn">
-        <button id="vendas">Vendas</button>
+        <button id="vendas">Venda</button>
         <button id="estorno">Estorno</button>
     </section>
 
@@ -50,50 +50,44 @@
 
         <table>
             <tr class="linha-valor">
-                <th>Sabor</th>
-                <th>Quantidade</th>
-                <th class="info-valor">Valor</th>
+                <td>Sabor</td>
+                <td>Quantidade</td>
+                <td class="info-valor">Valor</td>
 
             </tr>
-            <tr class="linha-valor">
+            <tr>
                 <td>Mussarela</td>
                 <td id="resultadoMussarela"></td>
-                <th class="itemValor" id="vendaMussarela"></th>
-            </tr>
-            <tr class="linha-valor">
-                <td>Portuguesa</td>
-                <td id="resultadoPortuguesa"></td>
-                <th class="itemValor" id="vendaPortuguesa"></th>
-            </tr>
-            <tr class="linha-valor">
-                <td>Quatro-queijos</td>
-                <td id="resultadoQuatroqueijos"></td>
-                <th class="itemValor" id="vendaQuatroqueijos"></th>
-            </tr>
-            <tr class="linha-valor">
-                <td>Mista</td>
-                <td id="resultadoMista"></td>
-                <th class="itemValor" id="vendaMista"></th>
-            </tr>
-            <tr class="linha-valor">
-                <td>Provolone</td>
-                <td id="resultadoProvolone"></td>
-                <th class="itemValor" id="vendaProvolone"></th>
+                <th id="vendaMussarela"></th>
             </tr>
             <tr>
-                <td>Total</td>
-                <td></td>
-                <td id="somaTotal"></td>
+                <td>Portuguesa</td>
+                <td id="resultadoPortuguesa"></td>
+                <th id="vendaPortuguesa"></th>
+            </tr>
+            <tr>
+                <td>Quatro-queijos</td>
+                <td id="resultadoQuatroqueijos"></td>
+                <th id="vendaQuatroqueijos"></th>
+            </tr>
+            <tr>
+                <td>Mista</td>
+                <td id="resultadoMista"></td>
+                <th id="vendaMista"></th>
+            </tr>
+            <tr>
+                <td>Provolone</td>
+                <td id="resultadoProvolone"></td>
+                <th id="vendaProvolone"></th>
             </tr>
         </table>
     </section><br>
 
     <section>
-        <button id="export" onclick="exportReportToExcel(this)">Planilha</button>
+        <button id="export" onclick="exportReportToExcel(this)">Exportar Planilha</button>
     </section>
     <script src="./tableToExcel.js"></script>
     <script src="./app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>
