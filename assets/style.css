@@ -56,3 +56,15 @@ p{
     
    
 }
+
+.bancodedados{
+   display: flex;
+   padding: 2px;
+   margin: 5px;
+}
+
+#pizzaForm{
+    font-family: monospace;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
