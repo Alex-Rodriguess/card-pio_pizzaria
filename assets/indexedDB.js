@@ -6,7 +6,7 @@ let outDB,
     db;
 
 const dbName = 'pizzaDB';
-const storeName = 'forecast';
+const storeName = 'cardapio';
 
 // function to create database
 const createDB = () => {
