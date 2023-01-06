@@ -120,6 +120,7 @@ function exportReportToExcel() {
 
 
 const btn = document.querySelector("#send");
+
 btn.addEventListener("click", function (e) {
 
     e.preventDefault();
@@ -128,7 +129,18 @@ btn.addEventListener("click", function (e) {
 
     const value = name.value;
 
-    value = document.getElementById('pizza').innerHTML;
+
+    document.querySelector("#pizza").innerHTML = value;
+
+
 });
+
+var novoElem = document.createElement('li');
+var texto = document.createTextNode('primeiro item');
+novoElem.appendChild(texto);
+
+var lista = document.getElementsByTagName('ul');
+var itens = document.getElementsByTagName('li');
+lista.insertBefore(novoElem, itens[0]);
 
 
