@@ -130,17 +130,21 @@ btn.addEventListener("click", function (e) {
     const value = name.value;
 
 
-    document.querySelector("#pizza").innerHTML = value;
+    document.querySelector("#pizza").innerHTML = value; //adiciona o valor do input na tabela
+    document.querySelector('input').value = ''; //limpa o campo input
+
+
+    var novoElem = document.createElement('li');
+    var texto = document.createTextNode('');
+    novoElem.appendChild(texto);
+
+    var lista = document.getElementsByTagName('ul');
+    var itens = document.getElementsByTagName('li');
+    lista.insertBefore(novoElem, itens[0]);
 
 
 });
 
-var novoElem = document.createElement('li');
-var texto = document.createTextNode('primeiro item');
-novoElem.appendChild(texto);
 
-var lista = document.getElementsByTagName('ul');
-var itens = document.getElementsByTagName('li');
-lista.insertBefore(novoElem, itens[0]);
 
 
