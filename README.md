@@ -1,2 +1,2 @@
 # cardapio_pizzaria
-em andamento...
+# Link do Deploy: https://alex-rodriguess.github.io/vendas-de-pizzas/
